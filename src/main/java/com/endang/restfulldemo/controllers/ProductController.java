@@ -40,8 +40,8 @@ public class ProductController {
     }
 
     @GetMapping("/list")
-    public @ResponseBody List<Product> getAll(){
-        return (List<Product>) repository.findAll();
+    public @ResponseBody Map<String,Object> getAll(){
+        return Collections.singletonMap("data",(List<Product>) repository.findAll());
     }
 
     @GetMapping("/findid/{id}")
