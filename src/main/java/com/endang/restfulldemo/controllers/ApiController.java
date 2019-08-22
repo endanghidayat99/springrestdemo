@@ -37,7 +37,7 @@ public class ApiController {
     @PostMapping("/jumlah")
     public @ResponseBody List<Komputasi> jumlah(@Valid @RequestBody List<Komputasi> list){
         for (Komputasi obj : list) {
-            obj.setHasil(obj.getBilanganA()*obj.getBilanganB());
+            obj.setHasil(obj.getBilanganA()+obj.getBilanganB());
         }
         return list;
     }

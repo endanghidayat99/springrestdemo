@@ -5,6 +5,20 @@ public class Komputasi {
     private Integer bilanganB;
     private Integer hasil;
 
+    public Komputasi() {
+    }
+
+    public Komputasi(Integer bilanganA, Integer bilanganB) {
+        this.bilanganA = bilanganA;
+        this.bilanganB = bilanganB;
+    }
+
+    public Komputasi(Integer bilanganA, Integer bilanganB, Integer hasil) {
+        this.bilanganA = bilanganA;
+        this.bilanganB = bilanganB;
+        this.hasil = hasil;
+    }
+
     public Integer getBilanganA() {
         return bilanganA;
     }
